@@ -1,3 +1,4 @@
+Rangkuman Materi
 
 PERTEMUAN 1 : Version Control & Git
 Version Control = praktik melacak dan mengelola perubahan file dari waktu ke waktu. 
@@ -22,5 +23,44 @@ git config --global user.email email@example.com
 Informasi nama dan email digunakan dalam commit. 
 Branch default juga dapat diatur menjadi main:
 git config --global init.defaultBranch main
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PERTEMUAN 2 : Dasar-Dasar Git
+Repository / repo = kumpulan file beserta riwayat perubahannya. Repository dapat dibuat dengan git init atau diperoleh dengan git clone. 
+
+Membuat repo:
+git init(di terminal)
+
+Commit = snapshot/keadaan repository pada titik waktu tertentu. Commit memungkinkan kita kembali melihat keadaan project pada titik tersebut. 
+
+Status file dalam Git:
+untracked > belum dilacak
+unmodified > tidak berubah sejak commit
+modified > sudah berubah
+staged > sudah dimasukkan ke staging area 
+
+Alurnya:
+File > git add > Staging Area > git commit > Repository
+
+Perintah penting:
+git status
+git add <file>
+git commit -m "pesan commit"
+git log
+git log --oneline
+git log --graph
+
+Remote repository = salinan repository yang berada di tempat lain, misalnya GitHub atau GitLab. 
+Perintah remote:
+git remote
+git remote -v
+git remote add <nama> <url>
+
+Fetch vs Pull:
+
+git fetch > mengambil perubahan dari remote, tetapi tidak langsung menggabungkannya.
+
+git pull > mengambil perubahan sekaligus menggabungkannya ke branch lokal. 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
