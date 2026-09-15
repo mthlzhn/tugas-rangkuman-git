@@ -64,3 +64,71 @@ git fetch > mengambil perubahan dari remote, tetapi tidak langsung menggabungkan
 git pull > mengambil perubahan sekaligus menggabungkannya ke branch lokal. 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PERTEMUAN 3 : GitHub & Markdown
+GitHub = tempat untuk meng-host repository Git. 
+README adalah file yang memberikan informasi tentang project, seperti:
+- Apa fungsi project.
+- Mengapa project berguna.
+- Cara memulai project.
+- Tempat mendapatkan bantuan.
+- Siapa yang memelihara/berkontribusi. 
+
+Menghubungkan repo lokal ke GitHub:
+git branch -M main
+git remote add origin https://github.com/username/repository.git
+git push -u origin main
+
+push = mengupload commit dari repository lokal ke remote. Setelah menggunakan -u, push berikutnya cukup:
+
+git push
+Markdown = format dokumen yang banyak digunakan developer, termasuk untuk README GitHub. 
+
+Sintaks penting:
+# Judul 1
+## Judul 2
+### Judul 3
+
+Teks:
+tebal
+*miring*
+dicoret
+
+Ordered list:
+1. Pertama
+2. Kedua
+3. Ketiga
+
+Unordered list:
+- Pertama
+- Kedua
+- Ketiga
+
+Link:
+[Nama Link](https://example.com)
+
+Gambar:
+![Deskripsi](https://example.com/gambar.jpg)
+
+Tabel:
+| Nama | Umur |
+| ---- | ---- |
+| Ani  | 20   |
+| Budi | 21   |
+
+Code block:
+console.log("Hello");
+
+Note :
+git init Membuat repository Git
+git status Melihat status file
+git add Masuk staging
+git commit Menyimpan snapshot
+git log Melihat riwayat
+git clone Menyalin repo yang sudah ada
+git remote Mengelola remote
+git fetch Mengambil perubahan dari remote
+git pull Fetch + menggabungkan
+git push Mengirim commit ke remote
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
