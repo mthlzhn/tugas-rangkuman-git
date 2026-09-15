@@ -1,0 +1,26 @@
+
+PERTEMUAN 1 : Version Control & Git
+Version Control = praktik melacak dan mengelola perubahan file dari waktu ke waktu. 
+VCS (Version Control System) adalah alat untuk membantu melakukan version control. Ada 3 jenis:
+1. VCS lokal > riwayat disimpan di komputer lokal.
+    Contoh: RCS
+2. VCS terpusat > menggunakan server pusat/client-server.
+    Contoh Terpusat: CVS, Subversion
+3. VCS terdistribusi > setiap client memiliki salinan lengkap repository beserta riwayatnya. 
+    Contoh Terdistribusi: Git, Mercurial 
+
+Git = VCS terdistribusi yang gratis dan open source. 
+Kegunaan Git:
+- Melacak riwayat perubahan.
+- Memudahkan kolaborasi.
+- Mendukung branching dan merging. 
+
+Setelah instalasi, Git perlu dikonfigurasi seperti berikut:
+git config --global user.name "Nama"
+git config --global user.email email@example.com
+
+Informasi nama dan email digunakan dalam commit. 
+Branch default juga dapat diatur menjadi main:
+git config --global init.defaultBranch main
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
